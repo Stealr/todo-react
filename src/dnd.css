@@ -1,0 +1,25 @@
+.left-tools {
+    margin-top: 15%;
+    /* display: flex; */
+
+}
+
+.right-col {
+    display: flex;
+    justify-content: center;
+}
+
+.add-dnd-button {
+    width: 200px;
+    height: 45px;
+}
+
+.image-trash {
+    width: 130px;
+    height: 130px;
+}
+
+
+/* .input-dnd {
+    width: auto;
+} */
