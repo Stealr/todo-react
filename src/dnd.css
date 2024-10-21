@@ -1,25 +1,72 @@
-.left-tools {
-    margin-top: 15%;
-    /* display: flex; */
-
+.dndPage {
+    margin-top: 40px;
 }
 
-.right-col {
+.left-tools {
+    margin-top: 220px;
+    margin-right: 50px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #d5d5d5;
+    width: 410px;
+    height: 430px;
+    border-radius: 10px;
+}
+
+.left-tools a {
+    text-decoration: none;
+    color: black;
+}
+
+.left-tools a:hover {
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+}
+
+.dnd-form input {
+    width: 85%;
+    margin-top: 20px;
 }
 
 .add-dnd-button {
     width: 200px;
     height: 45px;
+    margin-top: 18px;
+    margin-bottom: 20px;
 }
 
 .image-trash {
     width: 130px;
     height: 130px;
+
 }
 
+.trashbox {
+    border-radius: 15%;
+}
 
-/* .input-dnd {
-    width: auto;
-} */
+.lists {
+    overflow: auto;
+}
+
+.right-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.task button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+    color: rgb(0, 0, 0);
+    margin-left: auto;
+    font-size: 20px;
+}
+
+.dnd-form input {
+    margin-left: 10px;
+}

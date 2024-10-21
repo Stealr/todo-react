@@ -7,11 +7,12 @@ function DndTask({ item, index, removeTodo }) {
     return (
         <Draggable draggableId={item.id} index={index}>
             {(provided, snapshot) => (
-                <div
+                <div className='task'
                     ref={provided.innerRef}
                     {...provided.draggableProps}
                     {...provided.dragHandleProps}
                     style={{
+                        alignItems: 'center',
                         userSelect: 'none',
                         padding: 16,
                         margin: '0 0 8px 0',
@@ -23,7 +24,7 @@ function DndTask({ item, index, removeTodo }) {
                     }}
                 >
                     {item.content}
-                    <button>del</button>
+                    <button id="del-dnd" onClick={() => removeTodo(item.id)}>X</button>
                 </div>
             )}
         </Draggable>
