@@ -55,9 +55,14 @@ function App() {
     return true;
   });
 
-  return ( 
+  return (
     <div class="window">
       <div class="top">
+        <div className='top-name'>
+          <h2> Simple Todo </h2>
+          <a href='/dnd'>Переход на DnD Todo</a>
+        </div>
+
         <form onSubmit={addTodo}>
           <input
             type="text"
@@ -93,7 +98,7 @@ function App() {
         <TodoList todos={filteredTodos} toggleTodo={toggleTodo} removeTodo={removeTodo} />
       </div>
     </div>
-    
+
   );
 }
 

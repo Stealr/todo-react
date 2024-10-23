@@ -7,7 +7,7 @@ function trashbox( column ) {
     return (
         <Droppable droppableId="trash">
             {(provided, snapshot) => (
-                <div
+                <div className='trashbox'
                     ref={provided.innerRef}
                     {...provided.droppableProps}
                     style={{
