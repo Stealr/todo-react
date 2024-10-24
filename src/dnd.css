@@ -67,6 +67,10 @@
     font-size: 20px;
 }
 
+.task button:hover {
+    color: red;
+}
+
 .dnd-form input {
     margin-left: 10px;
 }
