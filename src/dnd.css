@@ -69,6 +69,7 @@
 
 .task button:hover {
     color: red;
+    background-color: red;
 }
 
 .dnd-form input {

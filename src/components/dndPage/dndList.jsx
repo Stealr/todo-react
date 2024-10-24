@@ -19,9 +19,9 @@ function DndList({ columnId, column, removeTodo }) {
                             width: 200,
                             height: 300,
                         }}
+
                     >
                         {column.items.map((item, index) => (
-                            
                             <DndTask
                                 key={item.id}
                                 item={item}

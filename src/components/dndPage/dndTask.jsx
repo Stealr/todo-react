@@ -17,14 +17,14 @@ function DndTask({ item, index, removeTodo }) {
                         padding: 16,
                         margin: '0 0 8px 0',
                         minHeight: '50px',
-                        backgroundColor: snapshot.isDragging ? '#263B4A' : '#456C86',
+                        backgroundColor: snapshot.isDragging ? '#3749ad' : '#1c2973',
                         color: 'white',
                         ...provided.draggableProps.style,
                         ...snapshot.isDragging,
                     }}
                 >
                     {item.content}
-                    <button id="del-dnd" onClick={() => removeTodo(item.id)}>X</button>
+                    <button id="del-dnd" onClick={() => removeTodo()}>X</button>
                 </div>
             )}
         </Draggable>

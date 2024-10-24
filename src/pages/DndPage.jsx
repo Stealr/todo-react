@@ -76,9 +76,8 @@ function DndPage() {
             const sourceColumn = columns[source.droppableId];
             const sourceItems = [...sourceColumn.items];
 
-
-            const taskElement = document.querySelector(`[data-rbd-drag-handle-draggable-id='${result.draggableId}']`);
-            taskElement.classList.add('del-anim');
+            // const taskElement = document.querySelector(`[data-rbd-drag-handle-draggable-id='${result.draggableId}']`);
+            // taskElement.classList.add('del-animation');
 
             sourceItems.splice(source.index, 1);
 
