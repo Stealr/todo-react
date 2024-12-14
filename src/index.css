@@ -23,6 +23,25 @@ button {
   border-bottom: 1px solid #4e4e4e;
 }
 
+.top-name {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-name h2{
+  margin: 0 10px 15px 0;
+}
+
+.top-name a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-name a:hover {
+  text-decoration: none;
+  color: rgb(104, 104, 104);
+}
+
 
 .filters {
   display: flex;

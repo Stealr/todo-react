@@ -3,17 +3,17 @@ import React from 'react';
 import { Droppable } from 'react-beautiful-dnd';
 
 
-function trashbox( column ) {
+function trashbox() {
     return (
         <Droppable droppableId="trash">
             {(provided, snapshot) => (
-                <div
+                <div className='trashbox'
                     ref={provided.innerRef}
                     {...provided.droppableProps}
                     style={{
                         width: '150px',
                         height: '150px',
-                        backgroundColor: snapshot.isDraggingOver ? 'red' : 'darkred',
+                        backgroundColor: snapshot.isDraggingOver ? '#b54e4e' : '#782c2c',
                         color: 'white',
                         display: 'flex',
                         justifyContent: 'center',

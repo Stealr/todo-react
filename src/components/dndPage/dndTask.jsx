@@ -7,23 +7,24 @@ function DndTask({ item, index, removeTodo }) {
     return (
         <Draggable draggableId={item.id} index={index}>
             {(provided, snapshot) => (
-                <div
+                <div className='task'
                     ref={provided.innerRef}
                     {...provided.draggableProps}
                     {...provided.dragHandleProps}
                     style={{
+                        alignItems: 'center',
                         userSelect: 'none',
                         padding: 16,
                         margin: '0 0 8px 0',
                         minHeight: '50px',
-                        backgroundColor: snapshot.isDragging ? '#263B4A' : '#456C86',
+                        backgroundColor: snapshot.isDragging ? '#3749ad' : '#1c2973',
                         color: 'white',
                         ...provided.draggableProps.style,
                         ...snapshot.isDragging,
                     }}
                 >
                     {item.content}
-                    <button>del</button>
+                    <button id="del-dnd" onClick={() => removeTodo()}>X</button>
                 </div>
             )}
         </Draggable>

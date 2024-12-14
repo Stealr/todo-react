@@ -51,9 +51,20 @@ function DndPage() {
 
     }
 
-    const removeTodo = (id) => {
-        setTodos(todos.filter(todo => todo.id !== id));
-    }
+    const removeTodo = (columnId, taskId) => {
+        setColumns((prevColumns) => {
+            const column = prevColumns[columnId];
+            const updatedItems = column.items.filter((item) => item.id !== taskId);
+    
+            return {
+                ...prevColumns,
+                [columnId]: {
+                    ...column,
+                    items: updatedItems,
+                },
+            };
+        });
+    };
 
 
     const onDragEnd = (result) => {
@@ -64,6 +75,10 @@ function DndPage() {
         if (destination.droppableId === 'trash') {
             const sourceColumn = columns[source.droppableId];
             const sourceItems = [...sourceColumn.items];
+
+            // const taskElement = document.querySelector(`[data-rbd-drag-handle-draggable-id='${result.draggableId}']`);
+            // taskElement.classList.add('del-animation');
+
             sourceItems.splice(source.index, 1);
 
             setColumns({
@@ -116,7 +131,9 @@ function DndPage() {
         <div className='dndPage' style={{ display: 'flex', justifyContent: 'center', height: '100%' }}>
             <DragDropContext onDragEnd={(result) => onDragEnd(result, columns, setColumns)}>
                 <div className='left-tools'>
-                    <form onSubmit={addTodo}>
+                    <h2> Dnd Todo </h2>
+                    <a href='/'>Переход на Simple todo</a>
+                    <form className="dnd-form" onSubmit={addTodo}>
                         <input className='input-dnd'
                             type="text"
                             value={newTodo}
