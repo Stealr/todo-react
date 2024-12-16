@@ -1,7 +1,7 @@
 {
   "name": "todo-app",
   "private": true,
-  "homepage": "https://Stealr.github.io/todo-react",
+  "homepage": "https://stealr.github.io/todo-react",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

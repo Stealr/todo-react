@@ -6,12 +6,14 @@ import DndPage from './pages/DndPage';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<TodoPage />} />
-        <Route path="/dnd" element={<DndPage />} />
-      </Routes>
-    </Router>
+    <TodoPage/>
+
+    // <Router>
+    //   <Routes>
+    //     <Route path="/" element={<TodoPage />} />
+    //     <Route path="/dnd" element={<DndPage />} />
+    //   </Routes>
+    // </Router>
   );
 }
 
