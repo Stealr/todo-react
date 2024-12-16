@@ -1,8 +1,8 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import TodoPage from './pages/TodoPage';
-import DndPage from './pages/DndPage';
+// import DndPage from './pages/DndPage';
 
 function App() {
   return (
