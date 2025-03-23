@@ -115,7 +115,7 @@ function DndPage() {
 
     return (
         <div className='dndPage' style={{ display: 'flex', justifyContent: 'center', height: '100%' }}>
-            <Link to="/">Go to todo</Link>
+            <Link id='nextPageDnD' to="/">Go to todo</Link>
             <DragDropContext onDragEnd={(result) => onDragEnd(result, columns, setColumns)}>
                 <div className='left-tools'>
                     <form onSubmit={addTodo}>

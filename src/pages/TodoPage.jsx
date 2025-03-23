@@ -59,7 +59,7 @@ function App() {
   return ( 
     <div class="window">
       <div class="top">
-      <Link to="/dnd">Go to DnD Page</Link>
+      <Link id='nextPage' to="/dnd">Go to DnD Page</Link>
         <form onSubmit={addTodo}>
           <input
             type="text"

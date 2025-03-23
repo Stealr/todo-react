@@ -23,3 +23,13 @@
 /* .input-dnd {
     width: auto;
 } */
+
+#nextPageDnD {
+    height: fit-content;
+    text-decoration: none;
+    color: white;
+}
+
+#nextPageDnD:hover {
+    color: rgb(168, 168, 168);
+}

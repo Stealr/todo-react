@@ -11,6 +11,10 @@ body {
   border-radius: 15px;
 }
 
+.window form {
+  margin-top: 20px;
+}
+
 
 button {
   cursor: pointer;
@@ -108,3 +112,11 @@ form input {
   margin-left: auto;
 }
 
+#nextPage {
+  text-decoration: none;
+  color: black;
+}
+
+#nextPage:hover {
+  color: rgb(75, 75, 75);
+}
