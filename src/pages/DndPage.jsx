@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
 import DndList from '/src/components/DndPage/DndList';
 import TrashBox from '/src/components/DndPage/trashbox.jsx';
+import { Link } from 'react-router-dom';
 
 function DndPage() {
     const [columns, setColumns] = useState({
@@ -114,6 +115,7 @@ function DndPage() {
 
     return (
         <div className='dndPage' style={{ display: 'flex', justifyContent: 'center', height: '100%' }}>
+            <Link to="/">Go to todo</Link>
             <DragDropContext onDragEnd={(result) => onDragEnd(result, columns, setColumns)}>
                 <div className='left-tools'>
                     <form onSubmit={addTodo}>

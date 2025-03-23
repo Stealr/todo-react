@@ -1,6 +1,7 @@
 // src/App.jsx
 import React, { useState } from 'react';
 import TodoList from '/src/components/TodoPage/TodoList';
+import { Link } from 'react-router-dom';
 
 function App() {
   const [todos, setTodos] = useState([
@@ -58,6 +59,7 @@ function App() {
   return ( 
     <div class="window">
       <div class="top">
+      <Link to="/dnd">Go to DnD Page</Link>
         <form onSubmit={addTodo}>
           <input
             type="text"
